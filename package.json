@@ -1,0 +1,11 @@
+{
+  "name": "rspack-vmp-persistent-cache-stale",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node repro.mjs"
+  },
+  "dependencies": {
+    "@rspack/core": "2.3.3"
+  }
+}
