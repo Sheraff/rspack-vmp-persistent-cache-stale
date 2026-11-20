@@ -1,6 +1,6 @@
 # Rspack: persistent cache keeps a virtual module's old content after `writeModule()` in `thisCompilation`
 
-Reproduction for an Rspack issue (link added once filed). Only `@rspack/core`.
+Reproduction for https://github.com/web-infra-dev/rspack/issues/16785. Only `@rspack/core`.
 
 Two builds in separate processes share one `cache: { type: 'persistent' }` directory. Both seed
 `rspack.experiments.VirtualModulesPlugin` with `export default "FIRST"`. The second build then calls
